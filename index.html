@@ -4,7 +4,7 @@
 	
 <head>
 	
-  <title>Bootstrap</title>
+  <title>Hem</title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,50 +20,106 @@
 <style>
 	
 	body {
-		background-image: -webkit-linear-gradient(#4796ef 0%, #ffffff 100%);
-		padding: 1%;
 		text-align: center;
 	}
 	
-	.jumbotron {
-		background-image: url(img/);
-	}
+	#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+	#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+	#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+	#section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+	#section5 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+	#section6 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+	#section7 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+	
 	
 </style>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<!-- Header -->
+<!-- Header Nav Bar -->
 
-<div class="container">
-  <div class="jumbotron">
-    <h1> T4 - Kullagymnasiet </h1>      
-    <p> Teknik är Framtid! </p>
-  </div>      
-</div>
-
-<!-- Navigation Bar -->
-
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"> T4 Logo </a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">T4</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Hem</a></li>
-      <li><a href="om.html"> Om oss </a></li>
-      <li><a href="vadgorvi.html"> Vad gör vi? </a></li>
-      <li><a href="kurser.html"> Kurser </a></li>
-      <li><a href="hitta.html"> Hitta hit! </a></li>
-    </ul>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Hem</a></li>
+          <li><a href="#section2">Foto / Film</a></li>
+          <li><a href="#section3">Projekt</a></li>
+          <li><a href="#section4">APL</a></li>
+          <li><a href="#section5">Lärarna</a></li>
+          <li><a href="#section6">Kursplan</a></li>
+          <li><a href="#section7">Hitta hit / Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </nav>
 
 <!-- Content -->
 
-<div class="container-fluid">
-	<div class="col-sm-6"> <h4> Evenemang </h4> </div>
-	<div class="col-sm-6"> <h4> Nyheter </h4> </div>
+<div id="section1" class="container-fluid">
+  <h1>T4</h1>
+  <img src="img/T4Banner.jpeg">
+  <p>Vi är T4</p>
+</div>
+
+<div id="section2" class="container-fluid">
+  <h1>Foto / Film</h1>
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ue0Y3F2UtXg?rel=0" frameborder="0" allowfullscreen></iframe>
+  
+  <p> Vi är T4 </p>
+  
+</div>
+
+<div id="section3" class="container-fluid">
+  <h1>Projekt</h1>
+  <p>Text</p>
+  <p>Text</p>
+</div>
+
+<div id="section4" class="container-fluid">
+  <h1>APL</h1>
+  <p>Text</p>
+  <p>Text</p>
+</div>
+
+<div id="section5" class="container-fluid">
+  <h1>Lärarna</h1>
+  <p>Text</p>
+  <p>Text</p>
+</div>
+
+<div id="section6" class="container-fluid">
+  <h1>Kursplan</h1>
+  <p>Text</p>
+  <p>Text</p>
+</div>
+
+<div id="section7" class="container-fluid">
+  <h1>Hitta hit / Kontakt</h1>
+	
+	<div class="col-sm-6"> <h4> Hitta hit </h4>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8878.8192381059!2d12.5734519!3d56.196779199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1504181380312" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> 
+	
+	</div>
+	
+	<div class="col-sm.6"> <h4> Kontakta oss </h4> 
+	
+	<p> <strong> Adress: </strong> Långarödsvägen 30, 263 34 Höganäs </p>
+	<p> <strong> Telefon: </strong> --- </p>
+	
+	</div>
 </div>
 
 </body>
